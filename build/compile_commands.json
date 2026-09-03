@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/Users/abhisser/learn/skadi/build",
+  "command": "/usr/bin/c++  -I/Users/abhisser/learn/skadi/include -std=c++20 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/skadi.dir/src/main.cpp.o -c /Users/abhisser/learn/skadi/src/main.cpp",
+  "file": "/Users/abhisser/learn/skadi/src/main.cpp",
+  "output": "CMakeFiles/skadi.dir/src/main.cpp.o"
+},
+{
+  "directory": "/Users/abhisser/learn/skadi/build",
+  "command": "/usr/bin/c++  -I/Users/abhisser/learn/skadi/include -std=c++20 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/skadi.dir/src/vector_math.cpp.o -c /Users/abhisser/learn/skadi/src/vector_math.cpp",
+  "file": "/Users/abhisser/learn/skadi/src/vector_math.cpp",
+  "output": "CMakeFiles/skadi.dir/src/vector_math.cpp.o"
+}
+]
