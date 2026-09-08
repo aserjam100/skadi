@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/skadi.dir/src/main.cpp.o"
   "CMakeFiles/skadi.dir/src/main.cpp.o.d"
-  "CMakeFiles/skadi.dir/src/vector_math.cpp.o"
-  "CMakeFiles/skadi.dir/src/vector_math.cpp.o.d"
   "skadi"
   "skadi.pdb"
 )

@@ -1,1 +1,1 @@
-/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/skadi.dir/src/main.cpp.o CMakeFiles/skadi.dir/src/vector_math.cpp.o -o skadi
+/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/skadi.dir/src/main.cpp.o -o skadi  libskadi_core.a

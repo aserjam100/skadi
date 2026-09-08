@@ -1,0 +1,2 @@
+/usr/bin/ar qc libskadi_core.a CMakeFiles/skadi_core.dir/src/vector_math.cpp.o CMakeFiles/skadi_core.dir/src/vector_index.cpp.o
+/usr/bin/ranlib libskadi_core.a

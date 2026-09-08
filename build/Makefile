@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named skadi_core
+
+# Build rule for target.
+skadi_core: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 skadi_core
+.PHONY : skadi_core
+
+# fast build rule for target.
+skadi_core/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/skadi_core.dir/build.make CMakeFiles/skadi_core.dir/build
+.PHONY : skadi_core/fast
+
+#=============================================================================
 # Target rules for targets named skadi
 
 # Build rule for target.
@@ -128,6 +141,32 @@ skadi: cmake_check_build_system
 skadi/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/skadi.dir/build.make CMakeFiles/skadi.dir/build
 .PHONY : skadi/fast
+
+#=============================================================================
+# Target rules for targets named vector_math_test
+
+# Build rule for target.
+vector_math_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vector_math_test
+.PHONY : vector_math_test
+
+# fast build rule for target.
+vector_math_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vector_math_test.dir/build.make CMakeFiles/vector_math_test.dir/build
+.PHONY : vector_math_test/fast
+
+#=============================================================================
+# Target rules for targets named vector_index_test
+
+# Build rule for target.
+vector_index_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vector_index_test
+.PHONY : vector_index_test
+
+# fast build rule for target.
+vector_index_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vector_index_test.dir/build.make CMakeFiles/vector_index_test.dir/build
+.PHONY : vector_index_test/fast
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -153,12 +192,36 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/skadi.dir/build.make CMakeFiles/skadi.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/vector_index.o: src/vector_index.cpp.o
+.PHONY : src/vector_index.o
+
+# target to build an object file
+src/vector_index.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/skadi_core.dir/build.make CMakeFiles/skadi_core.dir/src/vector_index.cpp.o
+.PHONY : src/vector_index.cpp.o
+
+src/vector_index.i: src/vector_index.cpp.i
+.PHONY : src/vector_index.i
+
+# target to preprocess a source file
+src/vector_index.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/skadi_core.dir/build.make CMakeFiles/skadi_core.dir/src/vector_index.cpp.i
+.PHONY : src/vector_index.cpp.i
+
+src/vector_index.s: src/vector_index.cpp.s
+.PHONY : src/vector_index.s
+
+# target to generate assembly for a file
+src/vector_index.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/skadi_core.dir/build.make CMakeFiles/skadi_core.dir/src/vector_index.cpp.s
+.PHONY : src/vector_index.cpp.s
+
 src/vector_math.o: src/vector_math.cpp.o
 .PHONY : src/vector_math.o
 
 # target to build an object file
 src/vector_math.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/skadi.dir/build.make CMakeFiles/skadi.dir/src/vector_math.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/skadi_core.dir/build.make CMakeFiles/skadi_core.dir/src/vector_math.cpp.o
 .PHONY : src/vector_math.cpp.o
 
 src/vector_math.i: src/vector_math.cpp.i
@@ -166,7 +229,7 @@ src/vector_math.i: src/vector_math.cpp.i
 
 # target to preprocess a source file
 src/vector_math.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/skadi.dir/build.make CMakeFiles/skadi.dir/src/vector_math.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/skadi_core.dir/build.make CMakeFiles/skadi_core.dir/src/vector_math.cpp.i
 .PHONY : src/vector_math.cpp.i
 
 src/vector_math.s: src/vector_math.cpp.s
@@ -174,8 +237,56 @@ src/vector_math.s: src/vector_math.cpp.s
 
 # target to generate assembly for a file
 src/vector_math.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/skadi.dir/build.make CMakeFiles/skadi.dir/src/vector_math.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/skadi_core.dir/build.make CMakeFiles/skadi_core.dir/src/vector_math.cpp.s
 .PHONY : src/vector_math.cpp.s
+
+tests/vector_index_test.o: tests/vector_index_test.cpp.o
+.PHONY : tests/vector_index_test.o
+
+# target to build an object file
+tests/vector_index_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vector_index_test.dir/build.make CMakeFiles/vector_index_test.dir/tests/vector_index_test.cpp.o
+.PHONY : tests/vector_index_test.cpp.o
+
+tests/vector_index_test.i: tests/vector_index_test.cpp.i
+.PHONY : tests/vector_index_test.i
+
+# target to preprocess a source file
+tests/vector_index_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vector_index_test.dir/build.make CMakeFiles/vector_index_test.dir/tests/vector_index_test.cpp.i
+.PHONY : tests/vector_index_test.cpp.i
+
+tests/vector_index_test.s: tests/vector_index_test.cpp.s
+.PHONY : tests/vector_index_test.s
+
+# target to generate assembly for a file
+tests/vector_index_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vector_index_test.dir/build.make CMakeFiles/vector_index_test.dir/tests/vector_index_test.cpp.s
+.PHONY : tests/vector_index_test.cpp.s
+
+tests/vector_math_test.o: tests/vector_math_test.cpp.o
+.PHONY : tests/vector_math_test.o
+
+# target to build an object file
+tests/vector_math_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vector_math_test.dir/build.make CMakeFiles/vector_math_test.dir/tests/vector_math_test.cpp.o
+.PHONY : tests/vector_math_test.cpp.o
+
+tests/vector_math_test.i: tests/vector_math_test.cpp.i
+.PHONY : tests/vector_math_test.i
+
+# target to preprocess a source file
+tests/vector_math_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vector_math_test.dir/build.make CMakeFiles/vector_math_test.dir/tests/vector_math_test.cpp.i
+.PHONY : tests/vector_math_test.cpp.i
+
+tests/vector_math_test.s: tests/vector_math_test.cpp.s
+.PHONY : tests/vector_math_test.s
+
+# target to generate assembly for a file
+tests/vector_math_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vector_math_test.dir/build.make CMakeFiles/vector_math_test.dir/tests/vector_math_test.cpp.s
+.PHONY : tests/vector_math_test.cpp.s
 
 # Help Target
 help:
@@ -186,12 +297,24 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... skadi"
+	@echo "... skadi_core"
+	@echo "... vector_index_test"
+	@echo "... vector_math_test"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/vector_index.o"
+	@echo "... src/vector_index.i"
+	@echo "... src/vector_index.s"
 	@echo "... src/vector_math.o"
 	@echo "... src/vector_math.i"
 	@echo "... src/vector_math.s"
+	@echo "... tests/vector_index_test.o"
+	@echo "... tests/vector_index_test.i"
+	@echo "... tests/vector_index_test.s"
+	@echo "... tests/vector_math_test.o"
+	@echo "... tests/vector_math_test.i"
+	@echo "... tests/vector_math_test.s"
 .PHONY : help
 
 

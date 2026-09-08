@@ -9,7 +9,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/abhisser/learn/skadi/src/main.cpp" "CMakeFiles/skadi.dir/src/main.cpp.o" "gcc" "CMakeFiles/skadi.dir/src/main.cpp.o.d"
-  "/Users/abhisser/learn/skadi/src/vector_math.cpp" "CMakeFiles/skadi.dir/src/vector_math.cpp.o" "gcc" "CMakeFiles/skadi.dir/src/vector_math.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

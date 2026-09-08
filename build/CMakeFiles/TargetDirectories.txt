@@ -1,3 +1,6 @@
+/Users/abhisser/learn/skadi/build/CMakeFiles/skadi_core.dir
 /Users/abhisser/learn/skadi/build/CMakeFiles/skadi.dir
+/Users/abhisser/learn/skadi/build/CMakeFiles/vector_math_test.dir
+/Users/abhisser/learn/skadi/build/CMakeFiles/vector_index_test.dir
 /Users/abhisser/learn/skadi/build/CMakeFiles/edit_cache.dir
 /Users/abhisser/learn/skadi/build/CMakeFiles/rebuild_cache.dir
